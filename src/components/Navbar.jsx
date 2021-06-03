@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 
 const Navbar = (props) => {
   const toggleMode = e => {
+    // console.log("Click - darkMode before setDarkmode: ",props.darkMode) //MSW
     e.preventDefault();
     props.setDarkMode(!props.darkMode);
+    // console.log("Click - darkMode after setDarkmode: ",props.darkMode) //MSW
+
   };
 
   return (
